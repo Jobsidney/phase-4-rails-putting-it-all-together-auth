@@ -40,7 +40,9 @@ function NewRecipe({ user }) {
       if (r.ok) {
         history.push("/");
       } else {
-        r.json().then((err) => setErrors(err.errors));
+        r.json().then((err) => {
+          
+          setErrors(err.errors)});
       }
     });
   }

@@ -25,7 +25,7 @@ function RecipeList() {
                 &nbsp;·&nbsp;
                 <cite>By {recipe.user.username}</cite>
               </p>
-              <ReactMarkdown>{recipe.instructions}</ReactMarkdown>
+              <ReactMarkdown>{recipe.instruction}</ReactMarkdown>
             </Box>
           </Recipe>
         ))

@@ -14,6 +14,6 @@ RSpec.describe Recipe, type: :model do
   
   describe "validations" do
     it { is_expected.to validate_presence_of :title }
-    it { is_expected.to validate_length_of(:instructions).is_at_least(50) }
+    it { is_expected.to  validate_presence_of :instruction }
   end
 end
